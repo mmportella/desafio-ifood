@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="13CF957C-1CD2-F7A5-9B7B-FC8C6E7328D1" name="T_IFD_PEDIDO_PRODUTO">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:00:43 UTC</createdTime>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_pedido" id="761F0F5B-F886-C503-BBDD-F58988900EAC">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:01:29 UTC</createdTime>
+<generatorID>BBF004C2-496B-BA0D-B642-124BBCAFFB29</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<referedAttribute>5FEA298E-1386-647E-3266-61DA89C0F224</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_produto" id="B0B24ACA-D808-BF68-79C3-65798D0C2E72">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:02:07 UTC</createdTime>
+<generatorID>B9B76684-3B4E-56D4-DA95-1CF835F80C04</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<referedAttribute>343C5B00-780A-E846-A932-11D96FB6A64D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qt_produto" id="741340F2-DF6F-E44A-B9E8-440A8BCF244D">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:02:21 UTC</createdTime>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="24953EBD-9ADA-5382-5579-C4B23E2CF01C" name="PedidoProduto_PK">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:02:45 UTC</createdTime>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>BBF004C2-496B-BA0D-B642-124BBCAFFB29,B9B76684-3B4E-56D4-DA95-1CF835F80C04</newElementsIDs>
+<usedAttributes>
+<attributeRef>761F0F5B-F886-C503-BBDD-F58988900EAC</attributeRef>
+<attributeRef>B0B24ACA-D808-BF68-79C3-65798D0C2E72</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

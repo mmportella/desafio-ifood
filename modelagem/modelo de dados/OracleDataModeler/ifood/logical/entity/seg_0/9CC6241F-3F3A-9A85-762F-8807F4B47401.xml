@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9CC6241F-3F3A-9A85-762F-8807F4B47401" name="T_IFD_RESTAURANTE">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 13:47:16 UTC</createdTime>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_restaurante" id="0102898F-4CCF-58DF-72FB-177D06B0A47B">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 13:48:18 UTC</createdTime>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cnpj" id="41A9D333-B2AB-6BDD-0403-C0A6546B4696">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 13:48:29 UTC</createdTime>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_restaurante" id="32E70274-26BB-8CCD-DB66-AA0C97A9AD63">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 13:49:31 UTC</createdTime>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="endereco" id="EFC695C2-71F5-F873-A286-1C6C342B09F3">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 13:49:51 UTC</createdTime>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefone" id="E0B58CC8-9885-ED77-61E7-A2D18716A0DF">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 13:50:06 UTC</createdTime>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tp_restaurante" id="97BA3F9C-E914-B0E3-2F7B-B16F15205A66">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 13:50:33 UTC</createdTime>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="horarioFuncionamento" id="9F068E5F-E04B-2259-5042-742A12194FE0">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 13:50:56 UTC</createdTime>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="avaliacao" id="A0D2FA76-19F9-97A8-BC42-3A5B5E2B73BD">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 13:51:09 UTC</createdTime>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pedidoMinimo" id="059D0B26-BFE2-C36A-A1C8-E13B0CBDC552">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 13:51:41 UTC</createdTime>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="retirada" id="DF9C0070-E4F0-F75D-0C67-EE3894028680">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 13:52:09 UTC</createdTime>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D4121D16-A47D-38B3-8087-2BF3B0C6601C" name="Restaurante_PK">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 13:48:33 UTC</createdTime>
+<ownerDesignName>ifood</ownerDesignName>
+<engineerTo>
+<item key="FEBB08D6-FF6F-E371-D2C8-78A86EE45A25" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>0102898F-4CCF-58DF-72FB-177D06B0A47B</newElementsIDs>
+<usedAttributes>
+<attributeRef>0102898F-4CCF-58DF-72FB-177D06B0A47B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

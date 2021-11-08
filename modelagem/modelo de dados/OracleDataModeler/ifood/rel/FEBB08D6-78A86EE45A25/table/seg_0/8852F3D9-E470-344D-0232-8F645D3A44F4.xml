@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8852F3D9-E470-344D-0232-8F645D3A44F4" name="T_IFD_PEDIDO_PRODUTO">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>13CF957C-1CD2-F7A5-9B7B-FC8C6E7328D1</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="T_IFD_PEDIDO_cd_pedido" id="4F131E3F-614B-F4C3-DDBA-FB2C43FE1D89">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>761F0F5B-F886-C503-BBDD-F58988900EAC</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB17B7AB-AD11-BDC7-0BDD-743ADEDA3374" referredColumn="2A1B1F65-1FD3-8E13-1885-0811C4F6D924"/>
+</associations>
+</Column>
+<Column name="T_IFD_PRODUTO_cd_produto" id="3E339568-AB14-36A2-3CA7-BAF7553AD4D6">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>B0B24ACA-D808-BF68-79C3-65798D0C2E72</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="55DE2AA5-363B-12B8-9967-2872B1629DE9" referredColumn="6EE0B565-0A67-736B-2A83-049B92E4B99D"/>
+</associations>
+</Column>
+<Column name="qt_produto" id="BA7A7E91-7F1D-A8C0-92B9-2D3E9CCF4C68">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>741340F2-DF6F-E44A-B9E8-440A8BCF244D</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8AD35722-DD9B-5227-94BA-0A2AB2544105" name="PEDIDO_PRODUTO_PK">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>24953EBD-9ADA-5382-5579-C4B23E2CF01C</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F131E3F-614B-F4C3-DDBA-FB2C43FE1D89"/>
+<colUsage columnID="3E339568-AB14-36A2-3CA7-BAF7553AD4D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="450C92EE-7A84-6BD3-5DA1-8A67B01A8AD9" name="PRODUTO_PEDIDO_FK">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>BBF004C2-496B-BA0D-B642-124BBCAFFB29</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F131E3F-614B-F4C3-DDBA-FB2C43FE1D89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="316BD6F8-1CF1-D278-0F55-9EC9BEE12921" name="PEDIDO_PRODUTO_FK">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>B9B76684-3B4E-56D4-DA95-1CF835F80C04</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E339568-AB14-36A2-3CA7-BAF7553AD4D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

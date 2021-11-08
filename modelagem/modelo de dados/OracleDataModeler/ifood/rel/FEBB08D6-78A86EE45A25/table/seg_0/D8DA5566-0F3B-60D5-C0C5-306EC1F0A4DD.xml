@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8DA5566-0F3B-60D5-C0C5-306EC1F0A4DD" name="T_IFD_PEDIDO">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>E8AE56C9-F04E-B28B-4C09-E48A86782755</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_pedido" id="2A1B1F65-1FD3-8E13-1885-0811C4F6D924">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>5FEA298E-1386-647E-3266-61DA89C0F224</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_usuario" id="B38B5C79-8369-A6BC-162D-0347E9D617A9">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>C511D2A4-CC22-BC2A-AE18-02E885B5DC79</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="endereco" id="7A09D562-3B69-6691-5313-448F1FBF59F5">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>2F8E43C5-FF1E-3C98-8D5C-D0D127E8E6EF</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_pedido" id="E63840B6-DD8E-8DC2-87E8-5A29CAFA0A61">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>DAFE0F83-D6B1-C16D-8B2C-6D651C2C4D17</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_taxa" id="61655981-D751-6CE7-3172-331F01B11115">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>1881A948-7846-9017-3260-46B8FEE27C6F</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESTAURANTE_cd_restaurante" id="10CF0D7A-6317-EBF8-54CD-F844DABF6256">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>38B00453-A0ED-8A93-1BB2-71D4F1DD8636</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A37B7FED-4C83-F428-BCFD-8523874C39C3" referredColumn="4A6F6B91-4CFE-8FDC-3C29-FC90A15B15C7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D39A72AA-6C14-281C-AD62-09758DE1C395" name="PEDIDO_PK">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>1C4CAFA6-FE19-1F2D-A1CC-ADCC5E7963DB</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A1B1F65-1FD3-8E13-1885-0811C4F6D924"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="233F2B74-7A2C-5CA2-C3A6-0B414628B2A6" name="PEDIDO_RESTAURANTE_FK">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<generatorID>9DF3EBBE-36CD-9D67-C15F-F0B43F38B193</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10CF0D7A-6317-EBF8-54CD-F844DABF6256"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
