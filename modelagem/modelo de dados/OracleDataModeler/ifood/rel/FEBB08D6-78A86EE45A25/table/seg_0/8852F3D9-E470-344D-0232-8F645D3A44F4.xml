@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="T_IFD_PEDIDO_cd_pedido" id="4F131E3F-614B-F4C3-DDBA-FB2C43FE1D89">
+<Column name="PEDIDO_cd_pedido" id="4F131E3F-614B-F4C3-DDBA-FB2C43FE1D89">
 <createdBy>marcelo</createdBy>
 <createdTime>2021-11-04 14:19:48 UTC</createdTime>
 <generatorID>761F0F5B-F886-C503-BBDD-F58988900EAC</generatorID>
@@ -24,7 +24,7 @@
 <colAssociation fkAssociation="DB17B7AB-AD11-BDC7-0BDD-743ADEDA3374" referredColumn="2A1B1F65-1FD3-8E13-1885-0811C4F6D924"/>
 </associations>
 </Column>
-<Column name="T_IFD_PRODUTO_cd_produto" id="3E339568-AB14-36A2-3CA7-BAF7553AD4D6">
+<Column name="PRODUTO_cd_produto" id="3E339568-AB14-36A2-3CA7-BAF7553AD4D6">
 <createdBy>marcelo</createdBy>
 <createdTime>2021-11-04 14:19:48 UTC</createdTime>
 <generatorID>B0B24ACA-D808-BF68-79C3-65798D0C2E72</generatorID>

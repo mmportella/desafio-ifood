@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RestauranteDAO {
-	
+
 	/**
 	 * Método para recuperar todos os restaurantes.
 	 * @return Uma lista de todos os registros de restaurantes.
@@ -36,6 +36,7 @@ public class RestauranteDAO {
 				r.setTipoRestaurante(rs.getString("TP_RESTAURANTE"));
 				r.setHorarioFuncionamento(rs.getString("HR_FUNCIONAMENTO"));
 				r.setAvaliacao(rs.getInt("AVALIACAO"));
+				r.setPrecoMedio(rs.getFloat("PRECO_MEDIO"));
 				r.setPedidoMinimo(rs.getFloat("PEDIDO_MINIMO"));
 				r.setRetirada(rs.getBoolean("RETIRADA"));
 				listaRestaurante.add(r);
@@ -77,6 +78,7 @@ public class RestauranteDAO {
 				r.setTipoRestaurante(rs.getString("TP_RESTAURANTE"));
 				r.setHorarioFuncionamento(rs.getString("HR_FUNCIONAMENTO"));
 				r.setAvaliacao(rs.getInt("AVALIACAO"));
+				r.setPrecoMedio(rs.getFloat("PRECO_MEDIO"));
 				r.setPedidoMinimo(rs.getFloat("PEDIDO_MINIMO"));
 				r.setRetirada(rs.getBoolean("RETIRADA"));
 			}
@@ -100,7 +102,7 @@ public class RestauranteDAO {
 		Connection conexao = ConnectionManager.getInstance().getConnection();
 		try {
 			PreparedStatement stmt = conexao.prepareStatement("INSERT INTO T_IFD_RESTAURANTE (CD_RESTAURANTE, CNPJ, NM_RESTAURANTE, "
-					+ "ENDERECO, TELEFONE, TP_RESTAURANTE, HR_FUNCIONAMENTO, AVALIACAO, PEDIDO_MINIMO, RETIRADA) VALUES (SEQ_RESTAURANTE.nextval, "
+					+ "ENDERECO, TELEFONE, TP_RESTAURANTE, HR_FUNCIONAMENTO, AVALIACAO, PRECO_MEDIO, PEDIDO_MINIMO, RETIRADA) VALUES (SEQ_RESTAURANTE.nextval, "
 					+ "?, ?, ?, ?, ?, ?, ?, ?, ?)");
 			stmt.setInt(1, r.getCnpj());
 			stmt.setString(2, r.getNomeRestaurante());
@@ -109,8 +111,9 @@ public class RestauranteDAO {
 			stmt.setString(5, r.getTipoRestaurante());
 			stmt.setString(6, r.getHorarioFuncionamento());
 			stmt.setInt(7, r.getAvaliacao());
-			stmt.setFloat(8, r.getPedidoMinimo());
-			stmt.setBoolean(9, r.isRetirada());
+			stmt.setFloat(8, r.getPrecoMedio());
+			stmt.setFloat(9, r.getPedidoMinimo());
+			stmt.setBoolean(10, r.isRetirada());
 			stmt.execute();
 			conexao.commit();
 			stmt.close();
@@ -137,7 +140,7 @@ public class RestauranteDAO {
 		try {
 			Connection conexao = ConnectionManager.getInstance().getConnection();
 			PreparedStatement stmt = conexao.prepareStatement("UPDATE T_IFD_RESTAURANTE SET CNPJ = ?, NM_RESTAURANTE = ?, ENDERECO = ?, TELEFONE = ?, "
-					+ "TP_RESTAURANTE = ?, HR_FUNCIONAMENTO = ?, AVALIACAO = ?, PEDIDO_MINIMO = ?, RETIRADA = ? WHERE CD_RESTAURANTE = ?");
+					+ "TP_RESTAURANTE = ?, HR_FUNCIONAMENTO = ?, AVALIACAO = ?, PRECO_MEDIO = ?, PEDIDO_MINIMO = ?, RETIRADA = ? WHERE CD_RESTAURANTE = ?");
 			stmt.setInt(1, r.getCnpj());
 			stmt.setString(2, r.getNomeRestaurante());
 			stmt.setString(3, r.getEndereco());
@@ -145,6 +148,7 @@ public class RestauranteDAO {
 			stmt.setString(5, r.getTipoRestaurante());
 			stmt.setString(6, r.getHorarioFuncionamento());
 			stmt.setInt(7, r.getAvaliacao());
+			stmt.setFloat(8, r.getPrecoMedio());
 			stmt.setFloat(8, r.getPedidoMinimo());
 			stmt.setBoolean(9, r.isRetirada());
 			stmt.setInt(10, r.getCdRestaurante());

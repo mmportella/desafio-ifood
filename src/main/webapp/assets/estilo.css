@@ -1,0 +1,204 @@
+@charset "ISO-8859-1";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 100vh;
+    background-color: #EA1D2C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    font-family: sans-serif;
+    text-transform: lowercase;
+}
+
+.title {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    background-image: url("https://logodownload.org/wp-content/uploads/2017/05/ifood-logo-01.png");
+    width: 20%;
+    height: 25vh;
+    background-size: cover;
+    background-repeat: round;
+}
+
+.icons {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icons .img {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: round;
+}
+
+.icons .clientes {
+    background-image: url("../assets/img/Cliente.png");
+}
+
+.icons .entregadores {
+    background-image: url("../assets/img/Entregador.png");
+}
+
+.icons .restaurantes {
+    background-image: url("../assets/img/Restaurante.png");
+}
+
+.section {
+    height: 100vh;
+    padding: 0% 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    text-align: center;
+    color: #3F3E3E;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    margin: 30px 0px;
+}
+
+.highlighted {
+    color: #EA1D2C;
+    font-size: 3em;
+}
+
+.insight {
+    flex-direction: row;
+}
+
+.insight .text {
+    text-align: right;
+    margin: 0px 20px;
+}
+
+.insight .infos {
+    width: 80%;
+}
+
+.insight .infos .query {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.insight .people {
+    width: 350px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: round;
+}
+
+.pt-2,
+.pt-4 {
+    background-color: #EA1D2C;
+}
+
+.pt-2 .text,
+.pt-4 .text {
+    color: white;
+    text-align: left;
+}
+
+.pt-3 {
+    flex-direction: row-reverse;
+}
+
+.pt-2 .people {
+    background-image: url("../assets/img/people-2.png");
+}
+
+.pt-3 .people {
+    background-image: url("../assets/img/people-3.png");
+}
+
+.pt-4 .people {
+    background-image: url("../assets/img/people-1.png");
+}
+
+.new form {
+    width: 80%;
+}
+
+.new form button {
+    background-color: #EA1D2C;
+    width: 100%;
+    border: none;
+}
+
+.new form button:hover {
+    background-color: #DA5D69;
+}
+
+@media (max-width: 1180px) {
+    .section {
+        padding: 0% 10%;
+    }
+}
+
+@media (max-width: 900px) {
+    .section {
+        padding: 0% 5%;
+    }
+}
+
+@media (max-width: 770px) {
+    .section {
+        flex-direction: column;
+        padding: 10% 2%;
+        height: auto;
+    }
+    .section .text {
+        text-align: center;
+    }
+    .insight .people {
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+    }
+    .icons {
+        width: 100%;
+    }
+    .logo {
+        width: 30%;
+        height: 20vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+        width: 40%;
+        height: 17vh;
+    }
+    .header {
+        height: auto;
+        padding: 10% 0%;
+    }
+    .icons {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

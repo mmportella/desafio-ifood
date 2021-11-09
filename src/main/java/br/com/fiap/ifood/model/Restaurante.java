@@ -10,7 +10,8 @@ public class Restaurante {
 	private int telefone;
 	private String tipoRestaurante;
 	private String horarioFuncionamento;
-	private  int avaliacao;
+	private int avaliacao;
+	private float precoMedio;
 	private float pedidoMinimo;
 	private boolean retirada;
 	
@@ -83,6 +84,14 @@ public class Restaurante {
 
 	public void setAvaliacao(int avaliacao) {
 		this.avaliacao = avaliacao;
+	}
+	
+	public float getPrecoMedio() {
+		return precoMedio;
+	}
+
+	public void setPrecoMedio(float precoMedio) {
+		this.precoMedio = precoMedio;
 	}
 
 	public float getPedidoMinimo() {

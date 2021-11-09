@@ -80,7 +80,7 @@
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="horarioFuncionamento" id="8248846B-36FA-C0EC-0949-0122A79C87D9">
+<Column name="hr_funcionamento" id="8248846B-36FA-C0EC-0949-0122A79C87D9">
 <createdBy>marcelo</createdBy>
 <createdTime>2021-11-04 14:19:48 UTC</createdTime>
 <generatorID>9F068E5F-E04B-2259-5042-742A12194FE0</generatorID>
@@ -104,7 +104,7 @@
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="pedidoMinimo" id="98DAFC8F-F209-4F28-4493-D20EE9C1AED7">
+<Column name="pedido_minimo" id="98DAFC8F-F209-4F28-4493-D20EE9C1AED7">
 <createdBy>marcelo</createdBy>
 <createdTime>2021-11-04 14:19:48 UTC</createdTime>
 <generatorID>059D0B26-BFE2-C36A-A1C8-E13B0CBDC552</generatorID>
