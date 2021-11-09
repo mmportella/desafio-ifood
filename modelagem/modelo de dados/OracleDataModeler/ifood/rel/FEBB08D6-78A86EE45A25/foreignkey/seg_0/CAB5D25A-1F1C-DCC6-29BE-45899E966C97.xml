@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CAB5D25A-1F1C-DCC6-29BE-45899E966C97" containerWithKeyObject="7C65E93C-C55C-0F8C-EA60-CCA28A1D6D1C" localFKIndex="D884E8DF-1C75-EC80-4ABB-F390D56440DD" name="PRODUTO_PEDIDO_FK">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-09 22:17:13 UTC</createdTime>
+<generatorID>BBF004C2-496B-BA0D-B642-124BBCAFFB29</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<referredTableLongName>T_IFD_PEDIDO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6BD2C7D2-B579-6F8A-490E-3FA3B8E1B4D4</referredTableID>
+<keyObject>82BCC8EB-C0F8-7D62-E30E-27E1748D1E0A</keyObject>
+<referredKeyID>82BCC8EB-C0F8-7D62-E30E-27E1748D1E0A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_pedido</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

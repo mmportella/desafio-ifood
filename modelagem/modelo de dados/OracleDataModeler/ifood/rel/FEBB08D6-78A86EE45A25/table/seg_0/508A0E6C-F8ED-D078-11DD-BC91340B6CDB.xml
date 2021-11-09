@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A28D62BF-0F2A-D114-A298-AA42D39C624A" name="T_IFD_RESTAURANTE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="508A0E6C-F8ED-D078-11DD-BC91340B6CDB" name="T_IFD_RESTAURANTE">
 <createdBy>marcelo</createdBy>
-<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<createdTime>2021-11-09 22:17:13 UTC</createdTime>
 <generatorID>9CC6241F-3F3A-9A85-762F-8807F4B47401</generatorID>
 <ownerDesignName>ifood</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="cd_restaurante" id="4A6F6B91-4CFE-8FDC-3C29-FC90A15B15C7">
+<Column name="cd_restaurante" id="E2494C1F-3071-F768-D27F-C6E4459F3D73">
 <createdBy>marcelo</createdBy>
-<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<createdTime>2021-11-09 22:17:13 UTC</createdTime>
 <generatorID>0102898F-4CCF-58DF-72FB-177D06B0A47B</generatorID>
 <ownerDesignName>ifood</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -20,9 +20,9 @@
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cnpj" id="4137E9C0-B7A7-44BE-751C-540F8954DA61">
+<Column name="cnpj" id="1B58FF22-00B1-7AEB-2E09-02CE7DB19563">
 <createdBy>marcelo</createdBy>
-<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<createdTime>2021-11-09 22:17:13 UTC</createdTime>
 <generatorID>41A9D333-B2AB-6BDD-0403-C0A6546B4696</generatorID>
 <ownerDesignName>ifood</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -32,9 +32,9 @@
 <ownDataTypeParameters>,14,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nm_restaurante" id="0FA6F63C-95D3-DD3E-12AE-3A767DC72F7F">
+<Column name="nm_restaurante" id="13D1BACA-BFB4-EBBE-06E9-8E8C4DE98B3A">
 <createdBy>marcelo</createdBy>
-<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<createdTime>2021-11-09 22:17:13 UTC</createdTime>
 <generatorID>32E70274-26BB-8CCD-DB66-AA0C97A9AD63</generatorID>
 <ownerDesignName>ifood</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -44,9 +44,9 @@
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="endereco" id="A1104CE0-51A7-3012-FA9D-C610D17EA41D">
+<Column name="endereco" id="C725113E-66DE-DE40-92E2-D7B3C13602B4">
 <createdBy>marcelo</createdBy>
-<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<createdTime>2021-11-09 22:17:13 UTC</createdTime>
 <generatorID>EFC695C2-71F5-F873-A286-1C6C342B09F3</generatorID>
 <ownerDesignName>ifood</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -56,9 +56,9 @@
 <ownDataTypeParameters>60,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="telefone" id="414974DD-1A88-DA42-BA76-7D5DC728FC9E">
+<Column name="telefone" id="A34AE9AE-2EC4-6275-7033-FC7B739881FB">
 <createdBy>marcelo</createdBy>
-<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<createdTime>2021-11-09 22:17:13 UTC</createdTime>
 <generatorID>E0B58CC8-9885-ED77-61E7-A2D18716A0DF</generatorID>
 <ownerDesignName>ifood</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -68,9 +68,9 @@
 <ownDataTypeParameters>,11,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="tp_restaurante" id="EDF8A68A-5CAF-4EF6-BA9B-96531C349DF5">
+<Column name="tp_restaurante" id="00B00677-E091-1422-A601-0A062181128A">
 <createdBy>marcelo</createdBy>
-<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<createdTime>2021-11-09 22:17:13 UTC</createdTime>
 <generatorID>97BA3F9C-E914-B0E3-2F7B-B16F15205A66</generatorID>
 <ownerDesignName>ifood</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -80,9 +80,9 @@
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="hr_funcionamento" id="8248846B-36FA-C0EC-0949-0122A79C87D9">
+<Column name="hr_funcionamento" id="5CFB73F9-FD4A-3E6F-C062-FC06C618E2D7">
 <createdBy>marcelo</createdBy>
-<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<createdTime>2021-11-09 22:17:13 UTC</createdTime>
 <generatorID>9F068E5F-E04B-2259-5042-742A12194FE0</generatorID>
 <ownerDesignName>ifood</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -92,11 +92,12 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="avaliacao" id="F5A3F2C8-2018-9093-9702-750D3F19B46B">
+<Column name="avaliacao" id="F9113271-492E-AE87-5100-E7B9204127E4">
 <createdBy>marcelo</createdBy>
-<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<createdTime>2021-11-09 22:17:13 UTC</createdTime>
 <generatorID>A0D2FA76-19F9-97A8-BC42-3A5B5E2B73BD</generatorID>
 <ownerDesignName>ifood</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -104,9 +105,23 @@
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="pedido_minimo" id="98DAFC8F-F209-4F28-4493-D20EE9C1AED7">
+<Column name="preco_medio" id="0CEFCA93-18EC-5333-EA03-67B8912475A2">
 <createdBy>marcelo</createdBy>
-<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<createdTime>2021-11-09 22:17:13 UTC</createdTime>
+<generatorID>AD4A8E63-4C68-E2AC-4481-0B2A053FF718</generatorID>
+<ownerDesignName>ifood</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pedido_minimo" id="66534276-949D-15B2-17E4-BA2A5F8341C9">
+<createdBy>marcelo</createdBy>
+<createdTime>2021-11-09 22:17:13 UTC</createdTime>
 <generatorID>059D0B26-BFE2-C36A-A1C8-E13B0CBDC552</generatorID>
 <ownerDesignName>ifood</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -117,11 +132,12 @@
 <ownDataTypeParameters>,5,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="retirada" id="F64B7EAE-39CE-122B-42BC-58017BFF7BA4">
+<Column name="retirada" id="B1606E03-08AC-2296-1579-C7F6A400FEE5">
 <createdBy>marcelo</createdBy>
-<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<createdTime>2021-11-09 22:17:13 UTC</createdTime>
 <generatorID>DF9C0070-E4F0-F75D-0C67-EE3894028680</generatorID>
 <ownerDesignName>ifood</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
@@ -131,16 +147,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="A68B1563-2E29-C2A9-F03A-A3A5BF7175F5" name="RESTAURANTE_PK">
+<ind_PK_UK id="F5CE377B-95C5-F967-5137-2D1C200BA0C5" name="RESTAURANTE_PK">
 <createdBy>marcelo</createdBy>
-<createdTime>2021-11-04 14:19:48 UTC</createdTime>
+<createdTime>2021-11-09 22:17:13 UTC</createdTime>
 <generatorID>D4121D16-A47D-38B3-8087-2BF3B0C6601C</generatorID>
 <ownerDesignName>ifood</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4A6F6B91-4CFE-8FDC-3C29-FC90A15B15C7"/>
+<colUsage columnID="E2494C1F-3071-F768-D27F-C6E4459F3D73"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,5 +1,5 @@
 -- Gerado por Oracle SQL Developer Data Modeler 21.2.0.183.1957
---   em:        2021-11-08 17:34:52 BRT
+--   em:        2021-11-09 19:19:30 BRT
 --   site:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -21,13 +21,13 @@ CREATE TABLE t_ifd_pedido (
 ALTER TABLE t_ifd_pedido ADD CONSTRAINT pedido_pk PRIMARY KEY ( cd_pedido );
 
 CREATE TABLE t_ifd_pedido_produto (
-    pedido_cd_pedido   NUMBER(14) NOT NULL,
-    produto_cd_produto NUMBER(8) NOT NULL,
-    qt_produto         NUMBER(4) NOT NULL
+    pedido_cd_pedido  NUMBER(14) NOT NULL,
+    roduto_cd_produto NUMBER(8) NOT NULL,
+    qt_produto        NUMBER(4) NOT NULL
 );
 
 ALTER TABLE t_ifd_pedido_produto ADD CONSTRAINT pedido_produto_pk PRIMARY KEY ( pedido_cd_pedido,
-                                                                                produto_cd_produto );
+                                                                                roduto_cd_produto );
 
 CREATE TABLE t_ifd_produto (
     cd_produto                 NUMBER(8) NOT NULL,
@@ -46,15 +46,16 @@ CREATE TABLE t_ifd_restaurante (
     telefone         NUMBER(11) NOT NULL,
     tp_restaurante   VARCHAR2(30) NOT NULL,
     hr_funcionamento VARCHAR2(10) NOT NULL,
-    avaliacao        NUMBER(1) NOT NULL,
+    avaliacao        NUMBER(1),
+    preco_medio      NUMBER(5, 2),
     pedido_minimo    NUMBER(5, 2) NOT NULL,
-    retirada         CHAR(1) NOT NULL
+    retirada         CHAR(1)
 );
 
 ALTER TABLE t_ifd_restaurante ADD CONSTRAINT restaurante_pk PRIMARY KEY ( cd_restaurante );
 
 ALTER TABLE t_ifd_pedido_produto
-    ADD CONSTRAINT pedido_produto_fk FOREIGN KEY ( produto_cd_produto )
+    ADD CONSTRAINT pedido_produto_fk FOREIGN KEY ( roduto_cd_produto )
         REFERENCES t_ifd_produto ( cd_produto );
 
 ALTER TABLE t_ifd_pedido

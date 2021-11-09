@@ -11,7 +11,7 @@ import br.com.fiap.ifood.model.Restaurante;
 import br.com.fiap.ifood.model.dao.RestauranteDAO;
 // import br.com.fiap.ifood.model.insight.*;
 
-@WebServlet("/")
+@WebServlet("/home")
 public class RestauranteController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
@@ -22,11 +22,11 @@ public class RestauranteController extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		
 		String bairro = "Liberdade";
 	 // PrimeiroInsight primeiro = new PrimeiroInsight(bairro);
 	 //	int restaurantesTipo = primeiro.getRestaurantesTipo();
-		int restaurantesTipo = 25;
+		int restaurantesTipo = 26;
 	 // String tipoRestaurante = primeiro.getTipoRestaurante();
 		String tipoRestaurante = "comida japonesa";
 		request.setAttribute("restaurantesTipo", restaurantesTipo);
@@ -70,10 +70,7 @@ public class RestauranteController extends HttpServlet {
 			restaurante.setTelefone(Integer.parseInt(request.getParameter("telefone")));
 			restaurante.setTipoRestaurante(request.getParameter("tipoRestaurante"));
 			restaurante.setHorarioFuncionamento(request.getParameter("horarioFuncionamento"));
-			restaurante.setAvaliacao(Integer.parseInt(request.getParameter("avaliacao")));
-			restaurante.setPrecoMedio(Float.parseFloat(request.getParameter("precoMedio")));
 			restaurante.setPedidoMinimo(Float.parseFloat(request.getParameter("pedidoMinimo")));
-			restaurante.setRetirada(Boolean.parseBoolean(request.getParameter("retirada")));
 			
 			RestauranteDAO rdao = new RestauranteDAO();
 			controle = rdao.add(restaurante);

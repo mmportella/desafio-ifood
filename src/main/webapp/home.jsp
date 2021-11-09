@@ -4,10 +4,10 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="ISO-8859-1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/estilo.css">
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Ifood</title>
 </head>
@@ -82,22 +82,22 @@
 
             <p class="text highlighted">Novo restaurante</p>
 
-            <form>
+            <form action="home" method="post">
                 <div class="form-group">
                     <label>Nome do restaurante</label>
-                    <input class="form-control" type="text" required>
+                    <input class="form-control" type="text" name="nomeRestaurante" required>
                 </div>
                 <div class="form-group">
                     <label>CNPJ</label>
-                    <input class="form-control" type="text" required>
+                    <input class="form-control" type="text" name="cnpj" required>
                 </div>
                 <div class="form-group">
                     <label>Bairro</label>
-                    <input class="form-control" type="text" required>
+                    <input class="form-control" type="text" name="endereco" required>
                 </div>
                 <div class="form-group">
                     <label for="type">Categoria</label>
-                    <select class="form-control" id="type" required>
+                    <select class="form-control" id="type" name="tipoRestaurante" required>
                       <option selected disabled>Selecione</option>
                       <option>Japonesa</option>
                       <option>Pizzaria</option>
@@ -108,7 +108,15 @@
                 </div>
                 <div class="form-group">
                     <label>Telefone</label>
-                    <input class="form-control" type="text" required>
+                    <input class="form-control" type="text" name="telefone" required>
+                </div>
+                <div class="form-group">
+                    <label>Horário de Funcionamento</label>
+                    <input class="form-control" type="text" name="horarioFuncionamento" required>
+                </div>
+                <div class="form-group">
+                    <label>Pedido Mínimo</label>
+                    <input class="form-control" type="text" name="pedidoMinimo" required>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
