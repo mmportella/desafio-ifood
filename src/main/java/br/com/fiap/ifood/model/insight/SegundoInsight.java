@@ -31,11 +31,11 @@ public class SegundoInsight {
 			stmt.setInt(3, this.avaliacao);
 			ResultSet rs = stmt.executeQuery();
 			rs.next();
-			int c = rs.getInt("COUNT(CD_RESTAURANTE)");
+			int controle = rs.getInt("COUNT(CD_RESTAURANTE)");
 			rs.close();
 			stmt.close();
 			conexao.close();
-			return c;
+			return controle;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
